@@ -1,0 +1,3 @@
+March 3rd 2014 - Angular Day2
+
+Create a CRUD application in angular. Keep it simple!
