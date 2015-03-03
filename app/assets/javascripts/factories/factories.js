@@ -35,12 +35,19 @@ addressBook.factory('contactData', function($http) {
     })
   }
 
-  // contactData.editContact = function(contact) {
-  //   console.log(contact.id)
-  //   $http.patch("/contacts" + contact.id + ".json").success(function(data){
-      
-  //   })
-  // }
+  contactData.editContact = function(contact, $scope) {
+    console.log(contact)
+    console.log(contact.contact.id)
+    $http.patch("/contacts/" + contact.contact.id + ".json", contact).success(function(data){
+      var foundContact = _.findWhere( contactData.data.contacts, {id: parseInt(contact.contact.id)})
+      foundContact.first_name = data.first_name
+      foundContact.last_name = data.last_name
+      foundContact.email = data.email
+      foundContact.phone_number = data.phone_number
+    })
+  }
 
 return contactData;
 });
+
+
