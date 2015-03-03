@@ -16,7 +16,9 @@
         %input{ type: "submit" }
     %br
     %br
-    .row
+    .row.text-left
       %ul
         %li{ 'ng-repeat': 'contact in contacts.contacts'}
-          {{contact.first_name}} {{contact.last_name}} {{contact.email}} {{contact.phone_number}}
+          {{contact.first_name}} {{contact.last_name}} {{contact.email}} {{contact.phone_number}} 
+          %span{ 'ng-click': 'editContact(contact)', class: "glyphicon glyphicon-pencil" }
+          %span{ 'ng-click': 'deleteContact(contact.id)', class: "glyphicon glyphicon-trash" }
