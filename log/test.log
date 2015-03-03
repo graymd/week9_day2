@@ -1295,3 +1295,224 @@ Redirected to http://test.host/contacts
 Completed 302 Found in 8ms (ActiveRecord: 6.7ms)
   [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `contacts`
   [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.2ms)[0m  SELECT DATABASE() as db
+  [1m[36m (7.1ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'address_book_test'[0m
+  [1m[35m (25.9ms)[0m  TRUNCATE TABLE `contacts`;
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:02:41.656542', '2015-03-03 19:02:41.656542')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContactsController#index as HTML
+Completed 406 Not Acceptable in 1ms
+  [1m[35m (6.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SELECT DATABASE() as db
+  [1m[36m (1.3ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'address_book_test'[0m
+  [1m[35m (3.5ms)[0m  TRUNCATE TABLE `contacts`;
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:03:10.549136', '2015-03-03 19:03:10.549136')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContactsController#index as JS
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+  [1m[36m (6.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.2ms)[0m  SELECT DATABASE() as db
+  [1m[36m (1.7ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'address_book_test'[0m
+  [1m[35m (4.1ms)[0m  TRUNCATE TABLE `contacts`;
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:05:06.271920', '2015-03-03 19:05:06.271920')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContactsController#index as JS
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:05:06.285844', '2015-03-03 19:05:06.285844')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContactsController#show as JS
+  Parameters: {"id"=>"2"}
+  [1m[35mContact Load (0.3ms)[0m  SELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 2 LIMIT 1
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+  [1m[36m (6.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:05:06.306550', '2015-03-03 19:05:06.306550')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContactsController#new as JS
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (6.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:05:06.319103', '2015-03-03 19:05:06.319103')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by ContactsController#create as JS
+  Parameters: {"contact"=>{"first_name"=>"kitter"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `contacts` (`first_name`, `created_at`, `updated_at`) VALUES ('kitter', '2015-03-03 19:05:06.322589', '2015-03-03 19:05:06.322589')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:05:06.328210', '2015-03-03 19:05:06.328210')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by ContactsController#edit as JS
+  Parameters: {"id"=>"6"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 6 LIMIT 1[0m
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:05:06.334812', '2015-03-03 19:05:06.334812')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by ContactsController#update as JS
+  Parameters: {"contact"=>{"first_name"=>"Updated Name"}, "id"=>"7"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `contacts` SET `first_name` = 'Updated Name', `updated_at` = '2015-03-03 19:05:06.338653' WHERE `contacts`.`id` = 7[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:05:06.344409', '2015-03-03 19:05:06.344409')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:05:06.346597', '2015-03-03 19:05:06.346597')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `contacts`[0m
+Processing by ContactsController#destroy as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mContact Load (0.3ms)[0m  SELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 9 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `contacts` WHERE `contacts`.`id` = 9
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 406 Not Acceptable in 2ms
+  [1m[35m (12.6ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.2ms)[0m  SELECT DATABASE() as db
+  [1m[36m (1.7ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'address_book_test'[0m
+  [1m[35m (3.7ms)[0m  TRUNCATE TABLE `contacts`;
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:05:39.920580', '2015-03-03 19:05:39.920580')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContactsController#index as JS
+  [1m[35mContact Load (0.2ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:05:39.932819', '2015-03-03 19:05:39.932819')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContactsController#show as JS
+  Parameters: {"id"=>"2"}
+  [1m[35mContact Load (0.3ms)[0m  SELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 2 LIMIT 1
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:05:39.945625', '2015-03-03 19:05:39.945625')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ContactsController#new as JS
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:05:39.951699', '2015-03-03 19:05:39.951699')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by ContactsController#create as JS
+  Parameters: {"contact"=>{"first_name"=>"kitter"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `contacts` (`first_name`, `created_at`, `updated_at`) VALUES ('kitter', '2015-03-03 19:05:39.954901', '2015-03-03 19:05:39.954901')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:05:39.959671', '2015-03-03 19:05:39.959671')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by ContactsController#edit as JS
+  Parameters: {"id"=>"6"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 6 LIMIT 1[0m
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:05:39.966466', '2015-03-03 19:05:39.966466')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by ContactsController#update as JS
+  Parameters: {"contact"=>{"first_name"=>"Updated Name"}, "id"=>"7"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `contacts` SET `first_name` = 'Updated Name', `updated_at` = '2015-03-03 19:05:39.970833' WHERE `contacts`.`id` = 7[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+  [1m[36m (1.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:05:39.977057', '2015-03-03 19:05:39.977057')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Kitter', 'Itter', 'kitter@itter.com', '555-555-5555', '2015-03-03 19:05:39.979678', '2015-03-03 19:05:39.979678')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `contacts`[0m
+Processing by ContactsController#destroy as JS
+  Parameters: {"id"=>"9"}
+  [1m[35mContact Load (0.3ms)[0m  SELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 9 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `contacts` WHERE `contacts`.`id` = 9
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 204 No Content in 3ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `contacts`
+  [1m[36m (0.8ms)[0m  [1mROLLBACK[0m

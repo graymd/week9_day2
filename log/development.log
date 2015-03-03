@@ -169,3 +169,197 @@ Completed 200 OK in 286ms (Views: 286.1ms | ActiveRecord: 0.0ms)
   [1m[35mSQL (0.3ms)[0m  INSERT INTO `contacts` (`first_name`, `created_at`, `updated_at`) VALUES ('kitter', '2015-03-03 17:40:17.063176', '2015-03-03 17:40:17.063176')
   [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
   [1m[35mContact Load (0.4ms)[0m  SELECT `contacts`.* FROM `contacts`
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 13:59:08 -0500
+
+SyntaxError (/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/controllers/contacts_controller.rb:19: syntax error, unexpected tIVAR, expecting keyword_do or '{' or '('
+      format.json { render :show, status: :create, location @contact }
+                                                                    ^):
+  app/controllers/contacts_controller.rb:19: syntax error, unexpected tIVAR, expecting keyword_do or '{' or '('
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (555.0ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.7ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (522.0ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1174.7ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 13:59:46 -0500
+Processing by ContactsController#index as JSON
+Completed 500 Internal Server Error in 24ms
+
+ActionView::MissingTemplate (Missing template contacts/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views"
+):
+  actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/MGCFI/.rvm/rubies/ruby-2.2.0-preview2/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/MGCFI/.rvm/rubies/ruby-2.2.0-preview2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/MGCFI/.rvm/rubies/ruby-2.2.0-preview2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/MGCFI/.rvm/rubies/ruby-2.2.0-preview2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (525.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (489.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1130.4ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 14:00:34 -0500
+
+SyntaxError (/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/controllers/contacts_controller.rb:57: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/contacts_controller.rb:57: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (516.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (495.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1127.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 14:00:46 -0500
+
+SyntaxError (/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/controllers/contacts_controller.rb:5: syntax error, unexpected keyword_do_block
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/controllers/contacts_controller.rb:57: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/contacts_controller.rb:5: syntax error, unexpected keyword_do_block
+  app/controllers/contacts_controller.rb:57: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (525.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.7ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (491.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1121.7ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 14:01:00 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 36ms (Views: 7.8ms | ActiveRecord: 25.6ms)

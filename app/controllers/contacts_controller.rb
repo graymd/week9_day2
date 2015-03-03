@@ -2,36 +2,54 @@ class ContactsController < ApplicationController
 
   def index
     @contacts = Contact.all
+    respond_to do |format|
+      format.json {render json: @contacts }
+    end
   end
 
   def show
     @contact = Contact.find params[:id]
+    respond_to do |format|
+      format.json {render json: @contact }
+    end
   end
 
   def new
     @contact = Contact.new
+    respond_to do |format|
+      format.json {render json: @contact }
+    end
   end
 
   def create
     @contact = Contact.new contact_params
     @contact.save
-    redirect_to contacts_path
+    respond_to do |format|
+      format.json { render json: @contact }
+    end
   end
 
   def edit
     @contact = Contact.find params[:id]
+    respond_to do |format|
+      format.json {render json: @contact }
+    end
   end
 
   def update
     @contact = Contact.find params[:id]
     @contact.update contact_params
-    redirect_to contact_path(@contact)
+    respond_to do |format|
+      format.json { render json: @contact }
+    end
   end
 
   def destroy
     @contact = Contact.find params[:id]
     @contact.destroy
-    redirect_to contacts_path
+    respond_to do |format|
+      format.json { head :no_content }
+    end
   end
 
 
