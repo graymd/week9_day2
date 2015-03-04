@@ -4712,3 +4712,2915 @@ Started GET "/contacts.json" for ::1 at 2015-03-03 18:29:33 -0500
 Processing by ContactsController#index as JSON
   [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
 Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:34:09 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 267ms (Views: 266.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 19:34:10 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.4ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 57ms (Views: 31.8ms | ActiveRecord: 20.6ms)
+
+
+Started DELETE "/contacts/2.json" for ::1 at 2015-03-03 19:34:14 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 2[0m
+  [1m[35m (6.5ms)[0m  COMMIT
+Completed 204 No Content in 19ms (ActiveRecord: 7.1ms)
+
+
+Started DELETE "/contacts/3.json" for ::1 at 2015-03-03 19:34:15 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 3[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 204 No Content in 4ms (ActiveRecord: 1.0ms)
+
+
+Started DELETE "/contacts/4.json" for ::1 at 2015-03-03 19:34:16 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 4[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 204 No Content in 3ms (ActiveRecord: 1.0ms)
+
+
+Started DELETE "/contacts/5.json" for ::1 at 2015-03-03 19:34:17 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 5[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 204 No Content in 3ms (ActiveRecord: 1.0ms)
+
+
+Started DELETE "/contacts/6.json" for ::1 at 2015-03-03 19:34:18 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 6[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 204 No Content in 4ms (ActiveRecord: 1.0ms)
+
+
+Started DELETE "/contacts/15.json" for ::1 at 2015-03-03 19:34:20 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 15 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 15[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 204 No Content in 3ms (ActiveRecord: 1.0ms)
+
+
+Started DELETE "/contacts/16.json" for ::1 at 2015-03-03 19:34:21 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"16"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 16 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 16[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 204 No Content in 3ms (ActiveRecord: 1.0ms)
+
+
+Started DELETE "/contacts/29.json" for ::1 at 2015-03-03 19:34:22 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"29"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 29 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 29[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+Completed 204 No Content in 3ms (ActiveRecord: 1.1ms)
+
+
+Started DELETE "/contacts/30.json" for ::1 at 2015-03-03 19:34:22 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"30"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 30 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 30[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 204 No Content in 3ms (ActiveRecord: 1.0ms)
+
+
+Started DELETE "/contacts/31.json" for ::1 at 2015-03-03 19:34:23 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"31"}
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 31 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 31[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 204 No Content in 5ms (ActiveRecord: 1.1ms)
+
+
+Started DELETE "/contacts/32.json" for ::1 at 2015-03-03 19:34:24 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"32"}
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 32 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 32[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 204 No Content in 5ms (ActiveRecord: 1.3ms)
+
+
+Started DELETE "/contacts/33.json" for ::1 at 2015-03-03 19:34:25 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"33"}
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 33 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 33[0m
+  [1m[35m (1.1ms)[0m  COMMIT
+Completed 204 No Content in 5ms (ActiveRecord: 1.9ms)
+
+
+Started DELETE "/contacts/44.json" for ::1 at 2015-03-03 19:34:26 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"44"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 44 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 44[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Completed 204 No Content in 3ms (ActiveRecord: 1.0ms)
+
+
+Started DELETE "/contacts/45.json" for ::1 at 2015-03-03 19:34:27 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"45"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 45 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 45[0m
+  [1m[35m (1.7ms)[0m  COMMIT
+Completed 204 No Content in 4ms (ActiveRecord: 2.3ms)
+
+
+Started DELETE "/contacts/46.json" for ::1 at 2015-03-03 19:34:28 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"46"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 46 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 46[0m
+  [1m[35m (1.9ms)[0m  COMMIT
+Completed 204 No Content in 5ms (ActiveRecord: 2.6ms)
+
+
+Started DELETE "/contacts/47.json" for ::1 at 2015-03-03 19:34:29 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"47"}
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 47 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 47[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+Completed 204 No Content in 5ms (ActiveRecord: 1.6ms)
+
+
+Started DELETE "/contacts/48.json" for ::1 at 2015-03-03 19:34:29 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"48"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 48 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 48[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Completed 204 No Content in 3ms (ActiveRecord: 1.0ms)
+
+
+Started DELETE "/contacts/49.json" for ::1 at 2015-03-03 19:34:30 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"49"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 49 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 49[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 204 No Content in 3ms (ActiveRecord: 1.0ms)
+
+
+Started DELETE "/contacts/50.json" for ::1 at 2015-03-03 19:34:31 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"50"}
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 50 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 50[0m
+  [1m[35m (5.5ms)[0m  COMMIT
+Completed 204 No Content in 10ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:34:32 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 159ms (Views: 159.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 19:34:32 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:38:49 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 152ms (Views: 151.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 19:38:49 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.2ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:39:33 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 39ms
+
+SyntaxError (/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:10: syntax error, unexpected keyword_class, expecting ')'
+...g-model': 'formLastName, 'class': 'form-control' )}>\n      ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+...: 'formLastName, 'class': 'form-control' )}>\n        <br>\n...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:10: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...stName, 'class': 'form-control' )}>\n        <br>\n        <...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+...pe: "text", placeholder: 'Enter Email', 'ng-model': 'formEma...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...placeholder: 'Enter Email', 'ng-model': 'formEmail', 'class'...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...lder: 'Enter Email', 'ng-model': 'formEmail', 'class': 'form...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+... Email', 'ng-model': 'formEmail', 'class': 'form-control' )}...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected keyword_class, expecting tSTRING_DEND
+...'ng-model': 'formEmail', 'class': 'form-control' )}>\n      ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+...l': 'formEmail', 'class': 'form-control' )}>\n        <br>\n...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...Email', 'class': 'form-control' )}>\n        <br>\n        <...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+...pe: "text", placeholder: 'Enter Phone Number', 'ng-model': '...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...lder: 'Enter Phone Number', 'ng-model': 'formPhoneNumber', '...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...Enter Phone Number', 'ng-model': 'formPhoneNumber', 'class':...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...', 'ng-model': 'formPhoneNumber', 'class': 'form-control' )}...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected keyword_class, expecting tSTRING_DEND
+...del': 'formPhoneNumber', 'class': 'form-control' )}>\n      ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+...ormPhoneNumber', 'class': 'form-control' )}>\n        <br>\n...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...umber', 'class': 'form-control' )}>\n        <br>\n        <...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:16: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...\n    <br>\n    <div class='row text-left'>\n      <ul>\n   ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:16: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...n    <div class='row text-left'>\n      <ul>\n        <li#{
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:21: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...amlout.attributes({}, nil,  'ng-repeat': 'contact in contact...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:21: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ttributes({}, nil,  'ng-repeat': 'contact in contacts.contac...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:21: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...{}, nil,  'ng-repeat': 'contact in contacts.contacts')}>\n  ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:23: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...amlout.attributes({}, nil,  'ng-click': 'editContact(contact...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:23: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...attributes({}, nil,  'ng-click': 'editContact(contact)', cla...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:23: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+... nil,  'ng-click': 'editContact(contact)', class: "glyphicon...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:23: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+...-click': 'editContact(contact)', class: "glyphicon glyphicon...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...amlout.attributes({}, nil,  'ng-click': 'deleteContact(conta...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...attributes({}, nil,  'ng-click': 'deleteContact(contact.id)'...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...il,  'ng-click': 'deleteContact(contact.id)', class: "glyphi...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+...k': 'deleteContact(contact.id)', class: "glyphicon glyphicon...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: unterminated string meets end of file):
+  app/views/welcome/index.html.haml:10: syntax error, unexpected keyword_class, expecting ')'
+  app/views/welcome/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+  app/views/welcome/index.html.haml:10: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:12: syntax error, unexpected keyword_class, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:14: syntax error, unexpected keyword_class, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:16: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:16: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:21: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:21: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:21: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:23: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:23: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:23: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:23: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:24: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:24: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:24: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:24: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:24: unterminated string meets end of file
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.2ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (629.0ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.7ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (607.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1398.6ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:39:36 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 33ms
+
+SyntaxError (/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:10: syntax error, unexpected keyword_class, expecting ')'
+...g-model': 'formLastName, 'class': 'form-control' )}>\n      ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+...: 'formLastName, 'class': 'form-control' )}>\n        <br>\n...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:10: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...stName, 'class': 'form-control' )}>\n        <br>\n        <...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+...pe: "text", placeholder: 'Enter Email', 'ng-model': 'formEma...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...placeholder: 'Enter Email', 'ng-model': 'formEmail', 'class'...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...lder: 'Enter Email', 'ng-model': 'formEmail', 'class': 'form...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+... Email', 'ng-model': 'formEmail', 'class': 'form-control' )}...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected keyword_class, expecting tSTRING_DEND
+...'ng-model': 'formEmail', 'class': 'form-control' )}>\n      ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+...l': 'formEmail', 'class': 'form-control' )}>\n        <br>\n...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...Email', 'class': 'form-control' )}>\n        <br>\n        <...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+...pe: "text", placeholder: 'Enter Phone Number', 'ng-model': '...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...lder: 'Enter Phone Number', 'ng-model': 'formPhoneNumber', '...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...Enter Phone Number', 'ng-model': 'formPhoneNumber', 'class':...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...', 'ng-model': 'formPhoneNumber', 'class': 'form-control' )}...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected keyword_class, expecting tSTRING_DEND
+...del': 'formPhoneNumber', 'class': 'form-control' )}>\n      ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+...ormPhoneNumber', 'class': 'form-control' )}>\n        <br>\n...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...umber', 'class': 'form-control' )}>\n        <br>\n        <...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:16: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...\n    <br>\n    <div class='row text-left'>\n      <ul>\n   ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:16: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...n    <div class='row text-left'>\n      <ul>\n        <li#{
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:21: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...amlout.attributes({}, nil,  'ng-repeat': 'contact in contact...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:21: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ttributes({}, nil,  'ng-repeat': 'contact in contacts.contac...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:21: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...{}, nil,  'ng-repeat': 'contact in contacts.contacts')}>\n  ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:23: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...amlout.attributes({}, nil,  'ng-click': 'editContact(contact...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:23: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...attributes({}, nil,  'ng-click': 'editContact(contact)', cla...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:23: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+... nil,  'ng-click': 'editContact(contact)', class: "glyphicon...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:23: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+...-click': 'editContact(contact)', class: "glyphicon glyphicon...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...amlout.attributes({}, nil,  'ng-click': 'deleteContact(conta...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...attributes({}, nil,  'ng-click': 'deleteContact(contact.id)'...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...il,  'ng-click': 'deleteContact(contact.id)', class: "glyphi...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+...k': 'deleteContact(contact.id)', class: "glyphicon glyphicon...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: unterminated string meets end of file):
+  app/views/welcome/index.html.haml:10: syntax error, unexpected keyword_class, expecting ')'
+  app/views/welcome/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+  app/views/welcome/index.html.haml:10: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:12: syntax error, unexpected keyword_class, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:14: syntax error, unexpected keyword_class, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:16: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:16: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:21: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:21: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:21: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:23: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:23: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:23: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:23: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:24: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:24: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:24: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:24: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:24: unterminated string meets end of file
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (653.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (1.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (729.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (1.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1667.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:39:42 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 34ms
+
+SyntaxError (/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:10: syntax error, unexpected keyword_class, expecting ')'
+...g-model': 'formLastName, 'class': 'form-control' )}>\n      ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+...: 'formLastName, 'class': 'form-control' )}>\n        <br>\n...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:10: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...stName, 'class': 'form-control' )}>\n        <br>\n        <...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+...pe: "text", placeholder: 'Enter Email', 'ng-model': 'formEma...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...placeholder: 'Enter Email', 'ng-model': 'formEmail', 'class'...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...lder: 'Enter Email', 'ng-model': 'formEmail', 'class': 'form...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+... Email', 'ng-model': 'formEmail', 'class': 'form-control' )}...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected keyword_class, expecting tSTRING_DEND
+...'ng-model': 'formEmail', 'class': 'form-control' )}>\n      ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+...l': 'formEmail', 'class': 'form-control' )}>\n        <br>\n...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...Email', 'class': 'form-control' )}>\n        <br>\n        <...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+...pe: "text", placeholder: 'Enter Phone Number', 'ng-model': '...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...lder: 'Enter Phone Number', 'ng-model': 'formPhoneNumber', '...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...Enter Phone Number', 'ng-model': 'formPhoneNumber', 'class':...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...', 'ng-model': 'formPhoneNumber', 'class': 'form-control' )}...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected keyword_class, expecting tSTRING_DEND
+...del': 'formPhoneNumber', 'class': 'form-control' )}>\n      ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+...ormPhoneNumber', 'class': 'form-control' )}>\n        <br>\n...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:14: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...umber', 'class': 'form-control' )}>\n        <br>\n        <...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:16: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...\n    <br>\n    <div class='row text-left'>\n      <ul>\n   ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:16: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...n    <div class='row text-left'>\n      <ul>\n        <li#{
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:21: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...amlout.attributes({}, nil,  'ng-repeat': 'contact in contact...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:21: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ttributes({}, nil,  'ng-repeat': 'contact in contacts.contac...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:21: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...{}, nil,  'ng-repeat': 'contact in contacts.contacts')}>\n  ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:23: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...amlout.attributes({}, nil,  'ng-click': 'editContact(contact...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:23: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...attributes({}, nil,  'ng-click': 'editContact(contact)', cla...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:23: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+... nil,  'ng-click': 'editContact(contact)', class: "glyphicon...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:23: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+...-click': 'editContact(contact)', class: "glyphicon glyphicon...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...amlout.attributes({}, nil,  'ng-click': 'deleteContact(conta...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...attributes({}, nil,  'ng-click': 'deleteContact(contact.id)'...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...il,  'ng-click': 'deleteContact(contact.id)', class: "glyphi...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+...k': 'deleteContact(contact.id)', class: "glyphicon glyphicon...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: unterminated string meets end of file):
+  app/views/welcome/index.html.haml:10: syntax error, unexpected keyword_class, expecting ')'
+  app/views/welcome/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+  app/views/welcome/index.html.haml:10: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:12: syntax error, unexpected keyword_class, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+  app/views/welcome/index.html.haml:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:14: syntax error, unexpected keyword_class, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting :: or '[' or '.'
+  app/views/welcome/index.html.haml:14: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:16: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:16: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:21: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:21: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:21: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:23: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:23: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:23: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:23: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:24: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:24: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/welcome/index.html.haml:24: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:24: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:24: unterminated string meets end of file
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (24.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (740.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (612.2ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.7ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1414.1ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:40:36 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 115ms (Views: 114.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 19:40:36 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Jason', 'Mosciski', 'jimmie.watsica@schamberger.net', '4262926469', '2015-03-04 00:41:31.506313', '2015-03-04 00:41:31.506313')
+  [1m[36m (6.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Camilla', 'Wyman', 'zackary@kuhicharris.net', '0273253729', '2015-03-04 00:41:31.516004', '2015-03-04 00:41:31.516004')[0m
+  [1m[35m (13.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Berry', 'Wunsch', 'stephanie@heller.biz', '8675449165', '2015-03-04 00:41:31.532053', '2015-03-04 00:41:31.532053')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Ed', 'Brekke', 'cristian.olson@turcottetrantow.name', '4569823213', '2015-03-04 00:41:31.534317', '2015-03-04 00:41:31.534317')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Elvie', 'Kris', 'hershel@wilkinson.org', '1358376267', '2015-03-04 00:41:31.536460', '2015-03-04 00:41:31.536460')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Harmon', 'Jenkins', 'kali@feest.org', '9383715832', '2015-03-04 00:41:31.538399', '2015-03-04 00:41:31.538399')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Arianna', 'Hermann', 'aunta_windler@gradynolan.com', '1789327637', '2015-03-04 00:41:31.542602', '2015-03-04 00:41:31.542602')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Lelia', 'Kuvalis', 'jacky@thiel.biz', '3821614339', '2015-03-04 00:41:31.544700', '2015-03-04 00:41:31.544700')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Gilberto', 'Wiza', 'esta@pagac.name', '6053605434', '2015-03-04 00:41:31.546870', '2015-03-04 00:41:31.546870')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Sheila', 'Mraz', 'mathew@bayerstracke.biz', '4016535084', '2015-03-04 00:41:31.550899', '2015-03-04 00:41:31.550899')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+
+
+Started GET "/" for ::1 at 2015-03-03 19:41:33 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 164ms (Views: 163.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 19:41:34 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.4ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:42:27 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 121ms (Views: 120.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 19:42:27 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.8ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:42:45 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 185ms (Views: 185.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 19:42:46 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.4ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:46:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 211ms (Views: 210.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 19:46:28 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (1.5ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 38ms (Views: 25.8ms | ActiveRecord: 8.9ms)
+
+
+Started POST "/contacts.json" for ::1 at 2015-03-03 19:46:50 -0500
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"first_name"=>"kitter", "last_name"=>"kat", "email"=>"kitter@meanbastard.com", "phone_number"=>"666-666-6666"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('kitter', 'kat', 'kitter@meanbastard.com', '666-666-6666', '2015-03-04 00:46:50.901574', '2015-03-04 00:46:50.901574')
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 6.7ms)
+
+
+Started DELETE "/contacts/61.json" for ::1 at 2015-03-03 19:47:24 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"61"}
+  [1m[35mContact Load (0.3ms)[0m  SELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 61 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `contacts` WHERE `contacts`.`id` = 61
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 20ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:47:29 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 127ms (Views: 127.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 19:47:29 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:48:16 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 137ms (Views: 136.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 19:48:16 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:48:18 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 138ms (Views: 138.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 19:48:18 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.4ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:48:42 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 46ms
+
+ActionView::Template::Error (Illegal element: classes and ids must have values.):
+    20:       %ul
+    21:         %li{ 'ng-repeat': 'contact in contacts.contacts'}
+    22:           {{contact.first_name}} {{contact.last_name}} 
+    23:           %a.{{contact.email}}
+    24:           {{contact.phone_number}} 
+    25:           %span{ 'ng-click': 'editContact(contact)', class: "glyphicon glyphicon-pencil" }
+    26:           %span{ 'ng-click': 'deleteContact(contact.id)', class: "glyphicon glyphicon-trash" }
+  app/views/welcome/index.html.haml:23
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (25.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (617.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.7ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (596.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.7ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1362.1ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:48:44 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (Illegal element: classes and ids must have values.):
+    20:       %ul
+    21:         %li{ 'ng-repeat': 'contact in contacts.contacts'}
+    22:           {{contact.first_name}} {{contact.last_name}} 
+    23:           %a.{{contact.email}}
+    24:           {{contact.phone_number}} 
+    25:           %span{ 'ng-click': 'editContact(contact)', class: "glyphicon glyphicon-pencil" }
+    26:           %span{ 'ng-click': 'deleteContact(contact.id)', class: "glyphicon glyphicon-trash" }
+  app/views/welcome/index.html.haml:23
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (616.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (577.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1349.7ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:48:47 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (Illegal element: classes and ids must have values.):
+    20:       %ul
+    21:         %li{ 'ng-repeat': 'contact in contacts.contacts'}
+    22:           {{contact.first_name}} {{contact.last_name}} 
+    23:           %a.{{contact.email}}
+    24:           {{contact.phone_number}} 
+    25:           %span{ 'ng-click': 'editContact(contact)', class: "glyphicon glyphicon-pencil" }
+    26:           %span{ 'ng-click': 'deleteContact(contact.id)', class: "glyphicon glyphicon-trash" }
+  app/views/welcome/index.html.haml:23
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (614.7ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (567.2ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1318.5ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:48:49 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 45ms
+
+ActionView::Template::Error (Illegal element: classes and ids must have values.):
+    20:       %ul
+    21:         %li{ 'ng-repeat': 'contact in contacts.contacts'}
+    22:           {{contact.first_name}} {{contact.last_name}} 
+    23:           %a.{{contact.email}}
+    24:           {{contact.phone_number}} 
+    25:           %span{ 'ng-click': 'editContact(contact)', class: "glyphicon glyphicon-pencil" }
+    26:           %span{ 'ng-click': 'deleteContact(contact.id)', class: "glyphicon glyphicon-trash" }
+  app/views/welcome/index.html.haml:23
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (611.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (1.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (563.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1285.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:49:31 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 123ms (Views: 123.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 19:49:32 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:49:40 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionView::Template::Error (Illegal element: classes and ids must have values.):
+    21:         %li{ 'ng-repeat': 'contact in contacts.contacts'}
+    22:           {{contact.first_name}} 
+    23:           {{contact.last_name}} 
+    24:           %a.{{contact.email}}
+    25:           {{contact.phone_number}} 
+    26:           %span{ 'ng-click': 'editContact(contact)', class: "glyphicon glyphicon-pencil" }
+    27:           %span{ 'ng-click': 'deleteContact(contact.id)', class: "glyphicon glyphicon-trash" }
+  app/views/welcome/index.html.haml:24
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (589.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (555.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1304.8ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:49:46 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 46ms
+
+SyntaxError (/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: syntax error, unexpected '}', expecting =>
+...ibutes({}, nil, {contact.email})}></a>\n          {{contact....
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:26: unknown regexp options - pa
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:26: syntax error, unexpected $undefined
+...n glyphicon-pencil" )}></span>\n          <span#{
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected tSTRING_DEND, expecting '}'
+_hamlout.attributes({}, nil,  'ng-click': 'deleteCo...
+                      ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: Can't assign to nil
+_hamlout.attributes({}, nil,  'ng-click': 'deleteContact(...
+                            ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected tLABEL_END, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...ttributes({}, nil,  'ng-click': 'deleteContact(contact.id)',...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected ',', expecting tSTRING_DEND
+...': 'deleteContact(contact.id)', class: "glyphicon glyphicon-...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected ')', expecting tSTRING_DEND
+...: "glyphicon glyphicon-trash" )}></span>\n        </li>\n   ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: unknown regexp option - l
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+...ash" )}></span>\n        </li>\n      </ul>\n    </div>\n  <...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: unknown regexp options - dv
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+...</li>\n      </ul>\n    </div>\n  </div>\n</div>\n", -5, fal...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: unknown regexp options - dv
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+...\n    </div>\n  </div>\n</div>\n", -5, false);::Haml::Util.h...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: unterminated string meets end of file
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  app/views/welcome/index.html.haml:24: syntax error, unexpected '}', expecting =>
+  app/views/welcome/index.html.haml:26: unknown regexp options - pa
+  app/views/welcome/index.html.haml:26: syntax error, unexpected $undefined
+  app/views/welcome/index.html.haml:27: syntax error, unexpected tSTRING_DEND, expecting '}'
+  app/views/welcome/index.html.haml:27: Can't assign to nil
+  app/views/welcome/index.html.haml:27: syntax error, unexpected tLABEL_END, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+  app/views/welcome/index.html.haml:27: syntax error, unexpected ',', expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:27: syntax error, unexpected ')', expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:27: unknown regexp option - l
+  app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+  app/views/welcome/index.html.haml:27: unknown regexp options - dv
+  app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+  app/views/welcome/index.html.haml:27: unknown regexp options - dv
+  app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+  app/views/welcome/index.html.haml:27: unterminated string meets end of file
+  app/views/welcome/index.html.haml:27: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (621.0ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (590.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1327.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:50:41 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (32.1ms)
+Completed 500 Internal Server Error in 64ms
+
+ActionView::Template::Error (undefined local variable or method `cat' for #<#<Class:0x007f8d151a2418>:0x007f8d15d09888>):
+    21:         %li{ 'ng-repeat': 'contact in contacts.contacts'}
+    22:           {{contact.first_name}} 
+    23:           {{contact.last_name}} 
+    24:           %a{cat}
+    25:           {{contact.phone_number}} 
+    26:           %span{ 'ng-click': 'editContact(contact)', class: "glyphicon glyphicon-pencil" }
+    27:           %span{ 'ng-click': 'deleteContact(contact.id)', class: "glyphicon glyphicon-trash" }
+  app/views/welcome/index.html.haml:24:in `_app_views_welcome_index_html_haml___729383778258295375_70121966540160'
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.2ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (632.7ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (588.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (1.2ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1343.6ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:50:53 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 49ms
+
+ActionView::Template::Error (undefined method `map' for "cat":String):
+    21:         %li{ 'ng-repeat': 'contact in contacts.contacts'}
+    22:           {{contact.first_name}} 
+    23:           {{contact.last_name}} 
+    24:           %a{'cat'}
+    25:           {{contact.phone_number}} 
+    26:           %span{ 'ng-click': 'editContact(contact)', class: "glyphicon glyphicon-pencil" }
+    27:           %span{ 'ng-click': 'deleteContact(contact.id)', class: "glyphicon glyphicon-trash" }
+  app/views/welcome/index.html.haml:24:in `_app_views_welcome_index_html_haml___729383778258295375_70121980814820'
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (601.2ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (579.0ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1305.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:52:43 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 41ms
+
+SyntaxError (/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: syntax error, unexpected '=', expecting ')'
+...ut.attributes({}, nil, :title = 'cat')}></a>\n          {{co...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: syntax error, unexpected ')', expecting tSTRING_DEND
+...ibutes({}, nil, :title = 'cat')}></a>\n          {{contact.p...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:26: unknown regexp options - pa
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:26: syntax error, unexpected $undefined
+...n glyphicon-pencil" )}></span>\n          <span#{
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected tSTRING_DEND, expecting '}'
+_hamlout.attributes({}, nil,  'ng-click': 'deleteCo...
+                      ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: Can't assign to nil
+_hamlout.attributes({}, nil,  'ng-click': 'deleteContact(...
+                            ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected tLABEL_END, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...ttributes({}, nil,  'ng-click': 'deleteContact(contact.id)',...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected ',', expecting tSTRING_DEND
+...': 'deleteContact(contact.id)', class: "glyphicon glyphicon-...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected ')', expecting tSTRING_DEND
+...: "glyphicon glyphicon-trash" )}></span>\n        </li>\n   ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: unknown regexp option - l
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+...ash" )}></span>\n        </li>\n      </ul>\n    </div>\n  <...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: unknown regexp options - dv
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+...</li>\n      </ul>\n    </div>\n  </div>\n</div>\n", -5, fal...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: unknown regexp options - dv
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+...\n    </div>\n  </div>\n</div>\n", -5, false);::Haml::Util.h...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: unterminated string meets end of file
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  app/views/welcome/index.html.haml:24: syntax error, unexpected '=', expecting ')'
+  app/views/welcome/index.html.haml:24: syntax error, unexpected ')', expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:26: unknown regexp options - pa
+  app/views/welcome/index.html.haml:26: syntax error, unexpected $undefined
+  app/views/welcome/index.html.haml:27: syntax error, unexpected tSTRING_DEND, expecting '}'
+  app/views/welcome/index.html.haml:27: Can't assign to nil
+  app/views/welcome/index.html.haml:27: syntax error, unexpected tLABEL_END, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+  app/views/welcome/index.html.haml:27: syntax error, unexpected ',', expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:27: syntax error, unexpected ')', expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:27: unknown regexp option - l
+  app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+  app/views/welcome/index.html.haml:27: unknown regexp options - dv
+  app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+  app/views/welcome/index.html.haml:27: unknown regexp options - dv
+  app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+  app/views/welcome/index.html.haml:27: unterminated string meets end of file
+  app/views/welcome/index.html.haml:27: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (605.0ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (1.0ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (583.2ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1336.6ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:53:04 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 138ms (Views: 138.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 19:53:05 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:53:13 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 124ms (Views: 123.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:53:13 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 126ms (Views: 126.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 19:53:14 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:54:01 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 134ms (Views: 133.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 19:54:02 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:54:23 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 51ms
+
+SyntaxError (/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:24: syntax error, unexpected '}', expecting =>
+... nil,  title = {{contact.email}} )}></a>\n          {{contac...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:26: unknown regexp options - pa
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:26: syntax error, unexpected $undefined
+...n glyphicon-pencil" )}></span>\n          <span#{
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected tSTRING_DEND, expecting '}'
+_hamlout.attributes({}, nil,  'ng-click': 'deleteCo...
+                      ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: Can't assign to nil
+_hamlout.attributes({}, nil,  'ng-click': 'deleteContact(...
+                            ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected tLABEL_END, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...ttributes({}, nil,  'ng-click': 'deleteContact(contact.id)',...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected ',', expecting tSTRING_DEND
+...': 'deleteContact(contact.id)', class: "glyphicon glyphicon-...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected ')', expecting tSTRING_DEND
+...: "glyphicon glyphicon-trash" )}></span>\n        </li>\n   ...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: unknown regexp option - l
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+...ash" )}></span>\n        </li>\n      </ul>\n    </div>\n  <...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: unknown regexp options - dv
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+...</li>\n      </ul>\n    </div>\n  </div>\n</div>\n", -5, fal...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: unknown regexp options - dv
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+...\n    </div>\n  </div>\n</div>\n", -5, false);::Haml::Util.h...
+...                               ^
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: unterminated string meets end of file
+/Users/MGCFI/projects/week9/day2_angular_create_delete/address_book/app/views/welcome/index.html.haml:27: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  app/views/welcome/index.html.haml:24: syntax error, unexpected '}', expecting =>
+  app/views/welcome/index.html.haml:26: unknown regexp options - pa
+  app/views/welcome/index.html.haml:26: syntax error, unexpected $undefined
+  app/views/welcome/index.html.haml:27: syntax error, unexpected tSTRING_DEND, expecting '}'
+  app/views/welcome/index.html.haml:27: Can't assign to nil
+  app/views/welcome/index.html.haml:27: syntax error, unexpected tLABEL_END, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+  app/views/welcome/index.html.haml:27: syntax error, unexpected ',', expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:27: syntax error, unexpected ')', expecting tSTRING_DEND
+  app/views/welcome/index.html.haml:27: unknown regexp option - l
+  app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+  app/views/welcome/index.html.haml:27: unknown regexp options - dv
+  app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+  app/views/welcome/index.html.haml:27: unknown regexp options - dv
+  app/views/welcome/index.html.haml:27: syntax error, unexpected $undefined
+  app/views/welcome/index.html.haml:27: unterminated string meets end of file
+  app/views/welcome/index.html.haml:27: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (636.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (587.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1348.5ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 19:59:44 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 127ms (Views: 126.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 19:59:45 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 20:00:00 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 49ms
+
+ActionView::Template::Error (Illegal element: classes and ids must have values.):
+    16:         %input{ type: "submit" }
+    17:     %br
+    18:     %br
+    19:     %a.{kitter}
+    20:     .row.text-left
+    21:       %ul
+    22:         %li{ 'ng-repeat': 'contact in contacts.contacts'}
+  app/views/welcome/index.html.haml:19
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.7ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (628.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (599.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1363.5ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 20:00:12 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 45ms
+
+ActionView::Template::Error (Illegal element: classes and ids must have values.):
+    16:         %input{ type: "submit" }
+    17:     %br
+    18:     %br
+    19:     %a.{'kitter'}
+    20:     .row.text-left
+    21:       %ul
+    22:         %li{ 'ng-repeat': 'contact in contacts.contacts'}
+  app/views/welcome/index.html.haml:19
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (593.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (574.2ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1302.2ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 20:00:41 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (Illegal element: classes and ids must have values.):
+    18:     %br
+    19: 
+    20:     .row.text-left
+    21:       %a.{'kitter'}
+    22:       %ul
+    23:         %li{ 'ng-repeat': 'contact in contacts.contacts'}
+    24:           {{contact.first_name}} 
+  app/views/welcome/index.html.haml:21
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (620.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (565.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1327.2ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 20:00:58 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (25.3ms)
+Completed 500 Internal Server Error in 64ms
+
+ActionView::Template::Error (undefined method `map' for "kitter":String):
+    18:     %br
+    19: 
+    20:     .row.text-left
+    21:       %a{'kitter'}
+    22:       %ul
+    23:         %li{ 'ng-repeat': 'contact in contacts.contacts'}
+    24:           {{contact.first_name}} 
+  app/views/welcome/index.html.haml:21:in `_app_views_welcome_index_html_haml___729383778258295375_70121930891140'
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (681.2ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (1.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (583.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (1.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1366.8ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 20:01:24 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 54ms
+
+ActionView::Template::Error (undefined method `map' for "kitter":String):
+    18:     %br
+    19: 
+    20:     .row.text-left
+    21:       %a{title = 'kitter'}
+    22:       %ul
+    23:         %li{ 'ng-repeat': 'contact in contacts.contacts'}
+    24:           {{contact.first_name}} 
+  app/views/welcome/index.html.haml:21:in `_app_views_welcome_index_html_haml___729383778258295375_70121939716580'
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (614.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.6ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (673.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1430.9ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 20:02:41 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 119ms (Views: 119.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 20:02:42 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 20:02:57 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 128ms (Views: 128.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 20:02:57 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:31:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 227ms (Views: 226.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:31:31 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 39ms (Views: 15.5ms | ActiveRecord: 20.0ms)
+
+
+Started POST "/contacts.json" for ::1 at 2015-03-03 21:40:36 -0500
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"Stace Kenace", "phone"=>"555-555-5555", "email"=>"stace@kenace.com"}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 3ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.0) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.0) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.0) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:163:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:163:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/MGCFI/.rvm/rubies/ruby-2.2.0-preview2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/MGCFI/.rvm/rubies/ruby-2.2.0-preview2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/MGCFI/.rvm/rubies/ruby-2.2.0-preview2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (525.8ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd0c40a2980 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd0c40a1738 @synonyms=[], @symbol=:text, @string="text/plain">]
+
+
+Started POST "/contacts.json" for ::1 at 2015-03-03 21:40:59 -0500
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"stace kenace", "phone"=>"1233334556", "email"=>"stace@kenace.com"}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 2ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.0) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.0) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.0) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:163:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:163:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/MGCFI/.rvm/rubies/ruby-2.2.0-preview2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/MGCFI/.rvm/rubies/ruby-2.2.0-preview2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/MGCFI/.rvm/rubies/ruby-2.2.0-preview2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (509.5ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd0c40a2980 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd0c40a1738 @synonyms=[], @symbol=:text, @string="text/plain">]
+
+
+Started DELETE "/contacts/1.json" for ::1 at 2015-03-03 21:41:38 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"1"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.0) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.0) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.0) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:163:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:163:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/MGCFI/.rvm/rubies/ruby-2.2.0-preview2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/MGCFI/.rvm/rubies/ruby-2.2.0-preview2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/MGCFI/.rvm/rubies/ruby-2.2.0-preview2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.1ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (523.9ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (557.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.7ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1233.9ms)
+
+
+Started POST "/contacts.json" for ::1 at 2015-03-03 21:42:11 -0500
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"first_name"=>"dzfasd", "last_name"=>"asdfasd"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `contacts` (`first_name`, `last_name`, `created_at`, `updated_at`) VALUES ('dzfasd', 'asdfasd', '2015-03-04 02:42:11.427405', '2015-03-04 02:42:11.427405')
+  [1m[36m (10.9ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 23ms (Views: 0.5ms | ActiveRecord: 11.6ms)
+
+
+Started DELETE "/contacts/62.json" for ::1 at 2015-03-03 21:43:24 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"62"}
+  [1m[35mContact Load (0.3ms)[0m  SELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 62 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `contacts` WHERE `contacts`.`id` = 62
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 34ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:45:14 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 167ms (Views: 167.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:45:15 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:45:26 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 140ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:45:26 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:46:28 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 117ms (Views: 116.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:46:28 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:48:00 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 175ms (Views: 174.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:48:00 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 150ms (Views: 150.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:48:01 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.7ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:48:27 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 112ms (Views: 112.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:48:28 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:49:02 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:49:02 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:49:23 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 104ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:49:23 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.4ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:49:53 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 113ms (Views: 112.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:49:53 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:50:00 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 103ms (Views: 102.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:50:00 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:50:25 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 107ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:50:25 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:50:49 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 104ms (Views: 103.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:50:50 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:50:58 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 112ms (Views: 112.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:50:59 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:51:23 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    19:     .row.text-left
+    20:       %ul
+    21:         %li{ 'ng-repeat': 'contact in contacts.contacts'}
+    22:             %strong
+    23:               {{contact.first_name}} 
+    24:               {{contact.last_name}}
+    25:             %br 
+  app/views/welcome/index.html.haml:22
+
+
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (525.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.5ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (490.2ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.8ms)
+  Rendered /Users/MGCFI/.rvm/gems/ruby-2.2.0-preview2@graymd_week9day2_angular_create_delete/gems/web-console-2.1.0/lib/web_console/templates/index.html (1128.7ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:51:34 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 111ms (Views: 111.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:51:34 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:51:43 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 105ms (Views: 104.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:51:43 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:51:55 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 111ms (Views: 110.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:51:55 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:53:06 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 140ms (Views: 139.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:53:07 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:54:26 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 145ms (Views: 144.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:54:26 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:54:41 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 106ms (Views: 105.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:54:41 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:54:52 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 153ms (Views: 152.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:54:53 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.4ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:55:11 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 113ms (Views: 112.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:55:11 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:57:04 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 165ms (Views: 164.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:57:04 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:57:15 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 117ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:57:16 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:57:38 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 112ms (Views: 111.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 21:57:38 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 108ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 21:57:38 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (1.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:00:45 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 117ms (Views: 117.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:00:46 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:02:01 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 104ms (Views: 103.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:02:02 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:02:55 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 115ms (Views: 114.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:02:55 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:04:29 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 105ms (Views: 104.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:04:29 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:04:52 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 105ms (Views: 105.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:04:53 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:05:07 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 106ms (Views: 106.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:05:08 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:05:21 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 111ms (Views: 110.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:05:22 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:05:32 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 107ms (Views: 107.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:05:32 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.4ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/contacts/54.json" for ::1 at 2015-03-03 22:05:38 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"54"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 54 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 54[0m
+  [1m[35m (12.2ms)[0m  COMMIT
+Completed 204 No Content in 15ms (ActiveRecord: 12.9ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:05:54 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 107ms (Views: 106.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:05:55 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:06:46 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 109ms (Views: 108.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:06:46 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:07:46 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 114ms (Views: 113.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:07:46 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:07:58 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 116ms (Views: 116.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:07:59 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:08:11 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 127ms (Views: 127.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:08:12 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:08:22 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 105ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:08:23 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:08:30 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 113ms (Views: 112.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:08:31 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:09:10 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 104ms (Views: 104.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:09:10 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.7ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:09:18 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 112ms (Views: 111.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:09:19 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:09:57 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 127ms (Views: 126.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:09:57 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:10:05 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 136ms (Views: 135.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:10:05 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/contacts.json" for ::1 at 2015-03-03 22:10:49 -0500
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"first_name"=>"Maddie", "last_name"=>"Daddy", "email"=>"maddie@daddy.com", "phone_number"=>"2342342342342"}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `contacts` (`first_name`, `last_name`, `email`, `phone_number`, `created_at`, `updated_at`) VALUES ('Maddie', 'Daddy', 'maddie@daddy.com', '2342342342342', '2015-03-04 03:10:49.356922', '2015-03-04 03:10:49.356922')[0m
+  [1m[35m (6.0ms)[0m  COMMIT
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 6.4ms)
+
+
+Started DELETE "/contacts/51.json" for ::1 at 2015-03-03 22:10:52 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"51"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 51 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 51[0m
+  [1m[35m (2.2ms)[0m  COMMIT
+Completed 204 No Content in 5ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:12:08 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 134ms (Views: 133.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:12:09 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:12:38 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 143ms (Views: 143.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:12:38 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:13:19 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 131ms (Views: 131.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:13:20 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:13:32 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 122ms (Views: 122.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:13:32 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:13:41 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 130ms (Views: 129.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:13:41 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:13:50 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 130ms (Views: 129.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:13:51 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:14:40 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 155ms (Views: 154.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:14:41 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:14:52 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 129ms (Views: 128.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:14:52 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:15:12 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 129ms (Views: 129.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:15:12 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.6ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:16:02 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 115ms (Views: 115.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:16:03 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:19:02 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 130ms (Views: 129.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:19:03 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.6ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:19:13 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 133ms (Views: 132.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:19:13 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:19:54 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 123ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:19:55 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:20:26 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 134ms (Views: 133.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:20:26 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:20:41 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 126ms (Views: 125.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:20:42 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:20:56 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 123ms (Views: 122.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:20:56 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:21:16 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 113ms (Views: 113.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:21:16 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:21:29 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 110ms (Views: 109.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:21:30 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:22:08 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 132ms (Views: 131.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:22:09 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:23:46 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 128ms (Views: 128.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:23:47 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:23:49 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 106ms (Views: 105.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:23:49 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:24:17 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 126ms (Views: 125.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:24:18 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:24:53 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 146ms (Views: 145.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:24:53 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:25:38 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 122ms (Views: 121.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:25:38 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:26:04 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 113ms (Views: 112.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:26:04 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:26:33 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 109ms (Views: 109.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:26:33 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:27:35 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 127ms (Views: 126.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:27:36 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:28:01 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 127ms (Views: 126.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:28:01 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:28:22 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 130ms (Views: 130.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:28:22 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:28:51 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 132ms (Views: 132.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:28:51 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:29:04 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 124ms (Views: 124.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:29:05 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.5ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:30:54 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 127ms (Views: 126.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:30:54 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:32:47 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 143ms (Views: 143.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:32:48 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:34:05 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 101ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:34:05 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:34:18 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 108ms (Views: 107.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:34:18 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:35:33 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 141ms (Views: 140.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:35:33 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.6ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:36:21 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 132ms (Views: 131.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:36:22 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:37:08 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 117ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:37:08 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:37:29 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 112ms (Views: 111.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:37:29 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:37:36 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 113ms (Views: 113.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:37:37 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:38:06 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 131ms (Views: 130.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:38:06 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:38:19 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 125ms (Views: 125.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:38:20 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.6ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:38:22 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 112ms (Views: 112.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:38:22 -0500
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-03 22:38:31 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 126ms (Views: 125.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for ::1 at 2015-03-03 22:38:32 -0500
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/contacts/52.json" for ::1 at 2015-03-03 22:38:37 -0500
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"52"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 52 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `contacts` WHERE `contacts`.`id` = 52[0m
+  [1m[35m (12.1ms)[0m  COMMIT
+Completed 204 No Content in 15ms (ActiveRecord: 12.6ms)
+
+
+Started PATCH "/contacts/53.json" for ::1 at 2015-03-03 22:38:44 -0500
+Processing by ContactsController#update as JSON
+  Parameters: {"contact"=>{"id"=>53, "first_name"=>"Berry", "last_name"=>"Wunsch is not cool", "email"=>"stephanie@heller.biz", "phone_number"=>"8675449165"}, "id"=>"53"}
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT  `contacts`.* FROM `contacts` WHERE `contacts`.`id` = 53 LIMIT 1[0m
+Unpermitted parameter: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `contacts` SET `last_name` = 'Wunsch is not cool', `updated_at` = '2015-03-04 03:38:44.190128' WHERE `contacts`.`id` = 53[0m
+  [1m[35m (2.0ms)[0m  COMMIT
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 2.7ms)

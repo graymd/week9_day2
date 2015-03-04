@@ -1,24 +1,33 @@
-.col-md-5.col-md-offset-4.text-center
-  %h1 Address Book
-  %div{ 'ng-controller': 'indexCtrl' }
-    {{ some_text.quote }} - {{ some_text.quoteMaster }}
-    .row
-      Enter New Contact:
-      %form{ 'ng-submit': "submitForm()" }
-        %input{ type: "text", placeholder: 'Enter First Name', 'ng-model': 'formFirstName' }
-        %br
-        %input{ type: "text", placeholder: 'Enter Last Name', 'ng-model': 'formLastName' }
-        %br
-        %input{ type: "text", placeholder: 'Enter Email', 'ng-model': 'formEmail' }
-        %br
-        %input{ type: "text", placeholder: 'Enter Phone Number', 'ng-model': 'formPhoneNumber' }
-        %br
-        %input{ type: "submit" }
+%div{ 'ng-controller': 'indexCtrl' }
+  .col-md-8.col-md-offset-2.text-center
+    .jumbotron
+      %h1
+        %strong Address Book
+    %h3 Enter New Contact:
+    %form{ 'ng-submit': "submitForm()" }
+      %input{ type: "text", placeholder: 'Enter First Name', 'ng-model': 'formFirstName', 'class': 'form-control' }
+      %br
+      %input{ type: "text", placeholder: 'Enter Last Name', 'ng-model': 'formLastName', 'class': 'form-control' }
+      %br
+      %input{ type: "text", placeholder: 'Enter Email', 'ng-model': 'formEmail', 'class': 'form-control' }
+      %br
+      %input{ type: "text", placeholder: 'Enter Phone Number', 'ng-model': 'formPhoneNumber', 'class': 'form-control' }
+      %br
+      %input{ type: "submit", 'class': 'btn btn-success' }
     %br
     %br
-    .row.text-left
-      %ul
-        %li{ 'ng-repeat': 'contact in contacts.contacts'}
-          {{contact.first_name}} {{contact.last_name}} {{contact.email}} {{contact.phone_number}} 
+  .row.col-md-10.col-md-offset-1
+    %ul
+      %li{ 'ng-repeat': 'contact in contacts.contacts'}
+        .col-md-3
+          %strong
+            {{contact.first_name}} 
+            {{contact.last_name}}
+          %br 
+          %a{}{{contact.email}}
+          %br
+          {{contact.phone_number}} 
           %span{ 'ng-click': 'editContact(contact)', class: "glyphicon glyphicon-pencil" }
           %span{ 'ng-click': 'deleteContact(contact.id)', class: "glyphicon glyphicon-trash" }
+          %br
+          %br

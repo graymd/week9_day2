@@ -1,0 +1,27 @@
+li{
+  display: inline;
+  list-style-type: none;
+}
+
+.jumbotron{
+  font-family: 'Libre Baskerville', serif;
+  border-radius: 8px;
+  background-color: #E6E6E6;
+  color: #1919A3;
+  margin-bottom: 30px;
+  padding: 30px 15px;
+}
+
+body{
+  font-family: serif;
+  background-color: #1919A3;
+  color: #E6E6E6;
+}
+
+a{
+  color: green;
+}
+
+input[type="text"], textarea{
+  background-color: #E6E6E6;
+}
